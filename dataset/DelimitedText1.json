@@ -6,7 +6,7 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"inputfile": {
+			"outputfile": {
 				"type": "string"
 			}
 		},
@@ -16,7 +16,7 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": {
-					"value": "@dataset().inputfile",
+					"value": "@dataset().outputfile",
 					"type": "Expression"
 				},
 				"container": "input"

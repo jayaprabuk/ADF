@@ -102,7 +102,7 @@
 									"referenceName": "DelimitedText1",
 									"type": "DatasetReference",
 									"parameters": {
-										"inputfile": {
+										"outputfile": {
 											"value": "@item().name",
 											"type": "Expression"
 										}
@@ -112,7 +112,13 @@
 							"outputs": [
 								{
 									"referenceName": "DelimitedText1",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"outputfile": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
