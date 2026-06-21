@@ -1,0 +1,15 @@
+{
+	"name": "jayazuretest",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "31712766-ea45-497a-a11c-f58f3ae3e8f8",
+		"tenantId": "78e02f52-a7f1-4031-bb49-cfd2790bec3d"
+	}
+}
