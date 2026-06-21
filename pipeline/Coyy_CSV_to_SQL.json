@@ -1,6 +1,7 @@
 {
 	"name": "Coyy_CSV_to_SQL",
 	"properties": {
+		"description": "Coyy_CSV_to_SQL",
 		"activities": [
 			{
 				"name": "Get Metadata1",
@@ -20,7 +21,7 @@
 						"type": "DatasetReference"
 					},
 					"fieldList": [
-						"itemName"
+						"childItems"
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
@@ -99,25 +100,13 @@
 							"inputs": [
 								{
 									"referenceName": "DelimitedText1",
-									"type": "DatasetReference",
-									"parameters": {
-										"filename": {
-											"value": "@item().name",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
 								{
 									"referenceName": "DelimitedText1",
-									"type": "DatasetReference",
-									"parameters": {
-										"filename": {
-											"value": "@item().Childname",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								}
 							]
 						}
