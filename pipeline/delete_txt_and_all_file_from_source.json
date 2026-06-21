@@ -23,8 +23,8 @@
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
 						"recursive": true,
-						"enablePartitionDiscovery": false,
-						"prefix": "Jay_"
+						"wildcardFileName": "*.html",
+						"enablePartitionDiscovery": false
 					}
 				}
 			}
