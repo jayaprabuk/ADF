@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": "East_Cluster_NL.csv",
 				"container": "csvtest"
 			},
 			"columnDelimiter": ",",
